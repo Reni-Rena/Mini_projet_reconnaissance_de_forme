@@ -12,6 +12,7 @@ img = cv2.imread("visage.jpg")
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
+# charger Haar
 face_classifier = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 )
